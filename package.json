@@ -1,0 +1,25 @@
+{
+  "name": "parcel-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf ./dist && mkdir dist",
+    "watch": "parcel watch index.html",
+    "prestart": "npm run clean",
+    "start": "parcel index.html -p 8080 --open",
+    "prebuild": "npm run clean",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "dependencies": {
+    "bootstrap-4-grid": "^3.1.1",
+    "rimraf": "^3.0.0",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.0",
+    "cssnano": "^4.1.10",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
